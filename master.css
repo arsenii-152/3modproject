@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "GOST 2930-62 PART 1"
+  src: url(fonts\GOST 2930-62 PART 1.ttf);
+}
+
+body {
+  width: 1440px;
+  height: 1024px;
+  margin: 0px;
+  background-color: black;
+}
+.panel {
+  position: absolute;
+  width: 1300px;
+  height: 346px;
+  left: 70px;
+  top: 626px;
+}
+.screen-frame {
+  position: absolute;
+  left: 11.11%;
+  right: 23.96%;
+  top: 3.12%;
+  bottom: 46.48%;
+}
+.screen {
+  position: absolute;
+  left: 13.33%;
+  right: 26.18%;
+  top: 5.57%;
+  bottom: 48.83%;
+}
+.next {
+  position: absolute;
+  width: 183px;
+  height: 182px;
+  left: 1132px;
+  top: 711px;
+}
+.wire {
+  position: absolute;
+  width: 13px;
+  height: 78px;
+  left: 399px;
+  top: 548px;
+}
+.reseter   {
+  position: absolute;
+  width: 95px;
+  height: 517px;
+  left: 1275px;
+  top: 36px;
+}
