@@ -15,39 +15,104 @@ body {
   height: 346px;
   left: 70px;
   top: 626px;
+  justify-content: center;
 }
-.screen-frame {
+.screenfarme {
   position: absolute;
-  left: 11.11%;
-  right: 23.96%;
+  left: 4.86%;
+  right: 30.21%;
   top: 3.12%;
   bottom: 46.48%;
 }
 .screen {
   position: absolute;
-  left: 13.33%;
-  right: 26.18%;
+  left: 6.6%;
+  right: 31.94%;
   top: 5.57%;
   bottom: 48.83%;
 }
-.next {
-  position: absolute;
-  width: 183px;
-  height: 182px;
-  left: 1132px;
-  top: 711px;
-}
-.wire {
-  position: absolute;
-  width: 13px;
-  height: 78px;
-  left: 399px;
-  top: 548px;
-}
-.reseter   {
+.resetb {
   position: absolute;
   width: 95px;
-  height: 517px;
+  height: 440px;
   left: 1275px;
-  top: 36px;
+  top: 108px;
+}
+.resetu {
+  position: absolute;
+  width: 64.39px;
+  height: 252px;
+  left: 1290px;
+  top: 31px;
+}
+.dangerback {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  left: 1068px;
+  top: 32px;
+}
+.danger {
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  left: 1079px;
+  top: 43px;
+}
+.sound {
+  position: absolute;
+  width: 144px;
+  height: 151px;
+  left: 1068px;
+  top: 215px;
+}
+.next {
+  position: absolute;
+  width: 144px;
+  height: 143.21px;
+  left: 1068px;
+  top: 405px;
+}
+.tmpan {
+  position: absolute;
+  width: 239px;
+  height: 230px;
+  left: 131px;
+  top: 684px;
+}
+.tmbut {
+  position: absolute;
+  width: 205.32px;
+  height: 151.9px;
+  left: 151px;
+  top: 701.16px;
+}
+.tmlightu {
+  position: absolute;
+  width: 157.35px;
+  height: 32.32px;
+  left: 175px;
+  top: 729.17px;
+}
+.tmlightb {
+  position: absolute;
+  width: 157.55px;
+  height: 32.32px;
+  left: 174.8px;
+  top: 863.06px;
+}
+.clickleft {
+  position: absolute;
+  left: 12.72%;
+  right: 86.26%;
+  top: 79.1%;
+  bottom: 15.48%;
+
+}
+.clickright {
+  position: absolute;
+  left: 21.47%;
+  right: 77.51%;
+  top: 79.1%;
+  bottom: 15.48%;
 }
