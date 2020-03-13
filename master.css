@@ -66,12 +66,21 @@ body {
   left: 1068px;
   top: 215px;
 }
-.next {
+.nextback {
   position: absolute;
   width: 144px;
   height: 143.21px;
   left: 1068px;
   top: 405px;
+}
+.next {
+  position: absolute;
+  width: 88.13px;
+  height: 88.13px;
+  left: 1095.54px;
+  top: 432.54px;
+  background: #FF0000;
+  border-radius: 50%;
 }
 .tmpan {
   position: absolute;
@@ -101,18 +110,202 @@ body {
   left: 174.8px;
   top: 863.06px;
 }
-.clickleft {
+.second {
   position: absolute;
-  left: 12.72%;
-  right: 86.26%;
+  width: 236px;
+  height: 262px;
+  left: 584px;
+  top: 684px;
+}
+.seconder {
+  position: absolute;
+  width: 185.19px;
+  height: 185.19px;
+  left: 609.48px;
+  top: 735px;
+  transition: 500ms;
+}
+.thirdb {
+  position: absolute;
+  width: 274px;
+  height: 231px;
+  left: 1035px;
+  top: 684px;
+}
+.thirddark1 {
+  position: absolute;
+  width: 59px;
+  height: 41px;
+  left: 73.26%;
+  right: 22.64%;
+  top: 74.51%;
+  bottom: 21.48%;
+  background: #D30909;
+}
+.thirddark2 {
+  position: absolute;
+  width: 54px;
+  height: 41px;
+  left: 77.5%;
+  right: 18.75%;
+  top: 74.51%;
+  bottom: 21.48%;
+  background: #D30909;
+}
+.thirddark3 {
+  position: absolute;
+  width: 54px;
+  height: 41px;
+  left: 81.39%;
+  right: 14.86%;
+  top: 74.51%;
+  bottom: 21.48%;
+  background: #D30909;
+}
+.thirddark4 {
+  position: absolute;
+  width: 59px;
+  height: 41px;
+  left: 85.28%;
+  right: 10.62%;
+  top: 74.51%;
+  bottom: 21.48%;
+  background: #D30909;
+}
+.thirdlight1 {
+  width: 59px;
+  height: 18px;
+  position: absolute;
+  left: 73.26%;
+  right: 22.64%;
   top: 79.1%;
-  bottom: 15.48%;
+  bottom: 19.14%;
+  background: #FF0000;
+}
+.thirdlight2 {
+  width: 54px;
+  height: 18px;
+  position: absolute;
+  left: 77.5%;
+  right: 18.75%;
+  top: 79.1%;
+  bottom: 19.14%;
+  background: #FF0000;
+}
+.thirdlight3 {
+  width: 54px;
+  height: 18px;
+  position: absolute;
+  left: 81.39%;
+  right: 14.86%;
+  top: 79.1%;
+  bottom: 19.14%;
+  background: #FF0000;
+}
+.thirdlight4 {
+  width: 59px;
+  height: 18px;
+  position: absolute;
+  left: 85.28%;
+  right: 10.62%;
+  top: 79.1%;
+  bottom: 19.14%;
+  background: #FF0000;
+}
+.thirdmid1 {
+  width: 59px;
+  height: 6px;
+  position: absolute;
+  left: 73.26%;
+  right: 22.64%;
+  top: 78.52%;
+  bottom: 20.9%;
+  background: #A90000;
+}
+.thirdmid2{
+  width: 54px;
+  height: 6px;
+  position: absolute;
+  left: 77.5%;
+  right: 18.75%;
+  top: 78.52%;
+  bottom: 20.9%;
+  background: #A90000;
+}
+.thirdmid3{
+  width: 54px;
+  height: 6px;
+  position: absolute;
+  left: 81.39%;
+  right: 14.86%;
+  top: 78.52%;
+  bottom: 20.9%;
+  background: #A90000;
 
 }
-.clickright {
+.thirdmid4 {
+  width: 59px;
+  height: 6px;
   position: absolute;
-  left: 21.47%;
-  right: 77.51%;
-  top: 79.1%;
-  bottom: 15.48%;
+  left: 85.28%;
+  right: 10.62%;
+  top: 78.52%;
+  bottom: 20.9%;
+  background: #A90000;
+}
+.thirdturn {
+  position: absolute;
+  width: 16.12px;
+  height: 10.55px;
+  left: 1077px;
+  top: 813px;
+}
+.thirdturn2 {
+  position: absolute;
+  width: 16.12px;
+  height: 10.55px;
+  left: 1135px;
+  top: 813px;
+}
+.thirdturn3 {
+  position: absolute;
+  width: 16.12px;
+  height: 10.55px;
+  left: 1191px;
+  top: 813px;
+}
+.thirdturn4 {
+  position: absolute;
+  width: 16.12px;
+  height: 10.55px;
+  left: 1250px;
+  top: 813px;
+}
+.wire {
+  position: absolute;
+  width: 13px;
+  height: 78px;
+  left: 399px;
+  top: 548px;
+}
+.clickl {
+  position: absolute;
+  width: 14.65px;
+  height: 55.47px;
+  left: 183.21px;
+  top: 810px;
+}
+.clickr {
+  position: absolute;
+  width: 14.65px;
+  height: 55.47px;
+  left: 308.21px;
+  top: 810px;
+}
+.signnext {
+  position: absolute;
+  width: 78.69px;
+  height: 10.23px;
+  left: 1100.26px;
+  top: 471.88px;
 }
