@@ -5,11 +5,12 @@ function secondRotate() {
 function secondRotateTwice() {
   object.style.transform = 'rotate(90deg)'
 }
-var clicker = document.querySelector(".clickl")
-function turnItOn () {
-  clicker.style.transform = 'rotate(90deg)'
-}
-let button = document.querySelector('.next')
+var button = document.querySelector(".next")
 function btnPressed() {
-  button.style.backgroundColor = "#A60000"
+  button.style.backgroundColor = "#A82B2B"
 }
+var clicker = document.querySelector(".clickl")
+function turnOn() {
+  clicker.style.transform = 'rotate(180deg)'
+
+  }
