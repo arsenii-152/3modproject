@@ -31,6 +31,8 @@ body {
   right: 31.94%;
   top: 5.57%;
   bottom: 48.83%;
+  background: radial-gradient(50% 50% at 50% 50%, #D1D1D1 0%, #868686 47.92%, #000000 100%);
+  border-radius: 47px;
 }
 .resetb {
   position: absolute;
