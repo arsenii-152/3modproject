@@ -9,6 +9,7 @@ body {
   margin: 0px;
   background-color: black;
 }
+
 .panel {
   position: absolute;
   width: 1300px;
@@ -17,7 +18,7 @@ body {
   top: 626px;
   justify-content: center;
 }
-.screenfarme {
+.screenframe {
   position: absolute;
   left: 4.86%;
   right: 30.21%;

@@ -15,7 +15,7 @@ let igniteAnimation = anime ({
 let igniteBtn = document.querySelector('.clickl')
   igniteBtn.onclick = igniteAnimation.play
 
-
+let screenl = document.querySelector('.screen')
   let igniteAnimation1 = anime ({
     targets: '.clickr',
     translateY: -50,
@@ -23,6 +23,10 @@ let igniteBtn = document.querySelector('.clickl')
     duration: 50,
     autoplay: false
   })
+  document.querySelector('.clickr').addEventListener('click',
+  function() {
+  screenl.style.backgroundColor = 'black'
+});
 let igniteBtn1 = document.querySelector('.clickr')
   igniteBtn1.onclick = igniteAnimation1.play
 
