@@ -82,6 +82,9 @@ body {
   background: #FF0000;
   border-radius: 50%;
 }
+.next:hover {
+  background-color: #B90000;
+}
 .tmpan {
   position: absolute;
   width: 239px;
@@ -295,17 +298,18 @@ body {
   left: 183.21px;
   top: 810px;
 }
-.clickr {
-  position: absolute;
-  width: 14.65px;
-  height: 55.47px;
-  left: 308.21px;
-  top: 810px;
-}
+
 .signnext {
   position: absolute;
   width: 78.69px;
   height: 10.23px;
   left: 1100.26px;
   top: 471.88px;
+}
+.clickr {
+  position: absolute;
+  width: 14.65px;
+  height: 55.47px;
+  left: 307px;
+  top: 810px;
 }
