@@ -1,3 +1,5 @@
+let lampFirst = document.querySelector('.tmlightu1')
+let lampSecond = document.querySelector('.tmlightu2')
 
 
 let igniteAnimation = anime({
@@ -10,6 +12,10 @@ let igniteAnimation = anime({
 
 let igniteBtn = document.querySelector('.clickl')
 igniteBtn.onclick = igniteAnimation.play
+document.querySelector('.clickl').addEventListener('click', function() {
+    lampFirst.style.background = "#24FF00"
+});
+
 
 let screenl = document.querySelector('.screen')
 let danger = document.querySelector('.danger')
@@ -24,7 +30,8 @@ let igniteAnimation1 = anime({
 document.querySelector('.clickr').addEventListener('click', function() {
   screenl.style.background = "black"
   text.style.opacity = 1
-  danger.style.background = "#2AB927" 
+  danger.style.background = "radial-gradient(50% 50% at 50% 50%, #05FF00 0%, #68BC66 100%)"
+  lampSecond.style.background = "#24FF00"
 });
 
 let igniteBtn1 = document.querySelector('.clickr')
@@ -49,7 +56,7 @@ let becomeStable = anime({
     autoplay: false
 })
 document.querySelector('.stable').addEventListener('click', function() {
-  body.style.background = `rgb(${anime.random(50,255)},${anime.random(50,255)},${anime.random(50,255)})`
+  body.style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
 });
 
 

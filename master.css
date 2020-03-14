@@ -130,20 +130,7 @@ h2 {
   left: 151px;
   top: 701.16px;
 }
-.tmlightu {
-  position: absolute;
-  width: 157.35px;
-  height: 32.32px;
-  left: 175px;
-  top: 729.17px;
-}
-.tmlightb {
-  position: absolute;
-  width: 157.55px;
-  height: 32.32px;
-  left: 174.8px;
-  top: 863.06px;
-}
+
 .second {
   position: absolute;
   width: 236px;
@@ -371,4 +358,40 @@ h2 {
 }
 .text {
   opacity: 0
+}
+.tmlightu1 {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  left: 175px;
+  top: 734px;
+  background: #188207;
+  border-radius: 50%
+}
+.tmlightu2 {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  left: 301px;
+  top: 734px;
+  background: #188207;
+  border-radius: 50%
+}
+.tmlightb1 {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  left: 175px;
+  top: 865px;
+  background: #A82B2B;
+  border-radius: 50%
+}
+.tmlightb2 {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  left: 301px;
+  top: 865px;
+  background: #A82B2B;
+  border-radius: 50%
 }
