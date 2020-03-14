@@ -2,14 +2,40 @@
   font-family: "GOST 2930-62 PART 1"
   src: url(fonts\GOST 2930-62 PART 1.ttf);
 }
-
+@font-face {
+ font-family: "Lucida Console"
+ src:url(fonts\GOST 2930-62 PART 1.ttf);
+}
 body {
   width: 1440px;
   height: 1024px;
   margin: 0px;
   background-color: black;
 }
-
+h1 {
+  position: absolute;
+  width: 463px;
+  height: 59px;
+  left: 306px;
+  top: 180px;
+  font-family: Lucida Console;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 59px;
+  color: #FFFFFF;
+}
+h2 {
+  position: absolute;
+  width: 460px;
+  height: 33px;
+  left: 309px;
+  top: 270px;
+  font-family: Lucida Console;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 33px;
+  color: #FFFFFF;
+}
 .panel {
   position: absolute;
   width: 1300px;
@@ -61,6 +87,8 @@ body {
   height: 122px;
   left: 1079px;
   top: 43px;
+  border-radius: 50%;
+  background: #454545;
 }
 .sound {
   position: absolute;
@@ -119,9 +147,13 @@ body {
 .second {
   position: absolute;
   width: 236px;
-  height: 262px;
-  left: 584px;
-  top: 684px;
+  height: 236.38px;
+  left: 583px;
+  top: 681px;
+  background: #FCFDE5;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 60px;
 }
 .seconder {
   position: absolute;
@@ -315,4 +347,28 @@ body {
   height: 55.47px;
   left: 307px;
   top: 810px;
+}
+.off {
+  position: absolute;
+  left: 41.4%;
+  right: 54.13%;
+  top: 70.49%;
+  bottom: 27.62%;
+}
+.stable {
+  position: absolute;
+  left: 46.66%;
+  right: 49.26%;
+  top: 67.85%;
+  bottom: 30.34%;
+}
+.dynamic{
+  position: absolute;
+  left: 51.53%;
+  right: 43.6%;
+  top: 70.49%;
+  bottom: 27.41%;
+}
+.text {
+  opacity: 0
 }
