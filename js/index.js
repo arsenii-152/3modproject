@@ -84,14 +84,15 @@ let thirdFour = document.querySelector('.thirdup4')
 let changeScreen = anime({
     targets: '.screen',
     autoplay: false,
-    background: '#FFF',
+    background: '#E9E9E9',
 })
 thirdOne.onclick = changeScreen.play
 let changeScreenOne = anime({
     targets: '.screen',
     autoplay: false,
-    background: '#0E0AFF'
+
 })
 thirdTwo.onclick = changeScreenOne.play
 document.querySelector('.thirdup2').addEventListener('click', function() {
-screenl.style.background = "linear-gradient(90deg, #6A3093 5.44%, #A044FF 100%)"
+  screenl.style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+});
