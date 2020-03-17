@@ -22,7 +22,7 @@ h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 59px;
-  color: #FFFFFF;
+  color: black;
 }
 h2 {
   position: absolute;
@@ -34,7 +34,7 @@ h2 {
   font-style: normal;
   font-weight: normal;
   font-size: 33px;
-  color: #FFFFFF;
+  color: black;
 }
 .panel {
   position: absolute;
@@ -57,7 +57,7 @@ h2 {
   right: 31.94%;
   top: 5.57%;
   bottom: 48.83%;
-  background: radial-gradient(50% 50% at 50% 50%, #D1D1D1 0%, #868686 47.92%, #000000 100%);
+  background: #454545;
   border-radius: 47px;
 }
 .resetb {
@@ -404,4 +404,52 @@ h2 {
   font-weight: normal;
   font-size: 27px;
   color: #000000;
+}
+.thirdup1:hover {
+  position: absolute;
+  width: 60px;
+  height: 57px;
+  left: 976px;
+  top: 726px;
+  background: #4F4F4F;
+  border: 14px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: 600ms;
+}
+.thirdup2:hover {
+  position: absolute;
+  width: 60px;
+  height: 57px;
+  left: 1061px;
+  top: 726px;
+  background: #4F4F4F;
+  border: 14px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: 600ms;
+}
+.thirdup3:hover {
+  position: absolute;
+  width: 60px;
+  height: 57px;
+  left: 1147px;
+  top: 726px;
+  background: #4F4F4F;
+  border: 14px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: 600ms;
+}
+.thirdup4:hover {
+  position: absolute;
+  width: 60px;
+  height: 57px;
+  left: 1232px;
+  top: 726px;
+  background: #4F4F4F;
+  border: 14px solid #8E8E8E;;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: 600ms;
 }

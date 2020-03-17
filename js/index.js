@@ -74,3 +74,24 @@ document.querySelector('.dynamic').addEventListener('click', function() {
 });
 let dynamic = document.querySelector('.dynamic')
 dynamic.onclick = becomeDynamic.play
+
+
+let thirdOne = document.querySelector('.thirdup1')
+let thirdTwo = document.querySelector('.thirdup2')
+let thirdThree = document.querySelector('.thirdup3')
+let thirdFour = document.querySelector('.thirdup4')
+
+let changeScreen = anime({
+    targets: '.screen',
+    autoplay: false,
+    background: '#FFF',
+})
+thirdOne.onclick = changeScreen.play
+let changeScreenOne = anime({
+    targets: '.screen',
+    autoplay: false,
+    background: '#0E0AFF'
+})
+thirdTwo.onclick = changeScreenOne.play
+document.querySelector('.thirdup2').addEventListener('click', function() {
+screenl.style.background = "linear-gradient(90deg, #6A3093 5.44%, #A044FF 100%)"
