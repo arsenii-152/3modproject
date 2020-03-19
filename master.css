@@ -60,6 +60,17 @@ h2 {
   background: #454545;
   border-radius: 47px;
 }
+.fakescreen {
+  position: absolute;
+  left: 6.6%;
+  right: 31.94%;
+  top: 5.57%;
+  bottom: 48.83%;
+  background: linear-gradient(180deg, #860000, #D02323, #FF0000 );
+  border-radius: 47px;
+  opacity: 0;
+  animation: gradient 8s ease infinite alternate;
+}
 .resetb {
   position: absolute;
   width: 95px;
@@ -452,4 +463,16 @@ h2 {
   box-sizing: border-box;
   border-radius: 50%;
   transition: 600ms;
+}
+.fade {
+  width: 1440px;
+  height: 1024px;
+  background: linear-gradient(180deg, #00bf8f, #26866E, #00DA30 );
+  opacity: 0;
+  animation: gradient 8s ease infinite alternate;
+}
+@keyframes gradient {
+  100% {
+        background-position: 0 2000px
+    }
 }

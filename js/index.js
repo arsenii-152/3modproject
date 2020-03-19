@@ -48,6 +48,7 @@ let turnOff = anime({
 off.onclick = turnOff.play
 document.querySelector('.off').addEventListener('click', function() {
   body.style.background = `black`
+  gradBack.style.opacity = 0
 });
 let becomeStable = anime({
     targets: '.seconder',
@@ -57,11 +58,14 @@ let becomeStable = anime({
 })
 document.querySelector('.stable').addEventListener('click', function() {
   body.style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+  gradBack.style.opacity = 0
 });
 
 
 let stable = document.querySelector('.stable')
 stable.onclick = becomeStable.play
+
+let gradBack = document.querySelector('.fade')
 let becomeDynamic = anime({
     targets: '.seconder',
     rotate: 90,
@@ -70,7 +74,7 @@ let becomeDynamic = anime({
 })
 
 document.querySelector('.dynamic').addEventListener('click', function() {
-  body.style.background = "linear-gradient(90deg, #6A3093 5.44%, #A044FF 100%)"
+  gradBack.style.opacity = 1
 });
 let dynamic = document.querySelector('.dynamic')
 dynamic.onclick = becomeDynamic.play
@@ -95,4 +99,28 @@ let changeScreenOne = anime({
 thirdTwo.onclick = changeScreenOne.play
 document.querySelector('.thirdup2').addEventListener('click', function() {
   screenl.style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+  fakeScreen.style.opacity = 0
 });
+let fakeScreen = document.querySelector('.fakescreen')
+let changeScreenTwo = anime ({
+  targets: '.fakescreen',
+  autoplay: false,
+  opacity: 1,
+})
+thirdThree.onclick = changeScreenTwo.play
+let random = document.querySelector('.resetu')
+let pushRandom = anime({
+    targets: '.resetu',
+    autoplay: false,
+    translateY: [
+    {value: 260, duration: 100, },
+    {value: 0, duration: 100, },
+  ],
+  rotate: [
+  {value:180, duration: 100, },
+  {value:0, duration: 100,    },
+],
+    duration: 50,
+    autoplay: false
+})
+random.onclick = pushRandom.play
