@@ -69,7 +69,7 @@ h2 {
   background: linear-gradient(180deg, #860000, #D02323, #FF0000 );
   border-radius: 47px;
   opacity: 0;
-  animation: gradient 8s ease infinite alternate;
+  animation: gradient 2s ease infinite alternate;
 }
 .resetb {
   position: absolute;
@@ -470,6 +470,20 @@ h2 {
   background: linear-gradient(180deg, #00bf8f, #26866E, #00DA30 );
   opacity: 0;
   animation: gradient 8s ease infinite alternate;
+}
+.last {
+  position: absolute;
+width: 841px;
+height: 45px;
+left: 117px;
+top: 240px;
+font-family: "Lucida Console";
+font-style: normal;
+font-weight: normal;
+font-size: 45px;
+line-height: 45px;
+color: #FFFFFF;
+opacity: 0
 }
 @keyframes gradient {
   100% {

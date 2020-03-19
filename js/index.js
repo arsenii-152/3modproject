@@ -1,7 +1,5 @@
 let lampFirst = document.querySelector('.tmlightu1')
 let lampSecond = document.querySelector('.tmlightu2')
-
-
 let igniteAnimation = anime({
   targets: '.clickl ',
   translateY: -50,
@@ -84,6 +82,10 @@ let thirdOne = document.querySelector('.thirdup1')
 let thirdTwo = document.querySelector('.thirdup2')
 let thirdThree = document.querySelector('.thirdup3')
 let thirdFour = document.querySelector('.thirdup4')
+let thirdSignOne = document.querySelector('.thirdsign1')
+let thirdSignTwo = document.querySelector('.thirdsign2')
+let thirdSignThree = document.querySelector('.thirdsign3')
+let thirdSignFour = document.querySelector('.thirdsign4')
 
 let changeScreen = anime({
     targets: '.screen',
@@ -94,12 +96,23 @@ thirdOne.onclick = changeScreen.play
 let changeScreenOne = anime({
     targets: '.screen',
     autoplay: false,
-
 })
+document.querySelector('.thirdup1').addEventListener('click', function() {
+  thirdSignOne.style.color = 'red'
+  thirdSignTwo.style.color = 'black'
+  thirdSignThree.style.color = 'black'
+  thirdSignFour.style.color = 'black'
+});
+
+
 thirdTwo.onclick = changeScreenOne.play
 document.querySelector('.thirdup2').addEventListener('click', function() {
   screenl.style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
   fakeScreen.style.opacity = 0
+  thirdSignOne.style.color = 'black'
+  thirdSignTwo.style.color = 'red'
+  thirdSignThree.style.color = 'black'
+  thirdSignFour.style.color = 'black'
 });
 let fakeScreen = document.querySelector('.fakescreen')
 let changeScreenTwo = anime ({
@@ -108,6 +121,28 @@ let changeScreenTwo = anime ({
   opacity: 1,
 })
 thirdThree.onclick = changeScreenTwo.play
+document.querySelector('.thirdup3').addEventListener('click', function() {
+  thirdSignTwo.style.color = 'black'
+  thirdSignThree.style.color = 'red'
+  thirdSignOne.style.color = 'black'
+  thirdSignFour.style.color = 'black'
+});
+let finalText = document.querySelector('.last')
+let changeScreenfinal = anime ({
+  targets: '.last',
+  autoplay: false,
+  opacity: 1,
+})
+document.querySelector('.thirdup4').addEventListener('click', function() {
+  thirdSignTwo.style.color = 'black'
+  thirdSignThree.style.color = 'black'
+  thirdSignOne.style.color = 'black'
+  thirdSignFour.style.color = 'red'
+  text.style.opacity = 0
+  finalText.style.opacity = 1
+
+});
+
 let random = document.querySelector('.resetu')
 let pushRandom = anime({
     targets: '.resetu',
