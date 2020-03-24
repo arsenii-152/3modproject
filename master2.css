@@ -6,6 +6,7 @@
  font-family: "Lucida Console"
  src:url(fonts\GOST 2930-62 PART 1.ttf);
 }
+
 body {
   margin: 0px;
   background-color: black;
@@ -354,8 +355,8 @@ h2 {
   top: 746.25px;
 }
 .fade {
-  width: 1440px;
-  height: 1024px;
+  width: 110vw;
+  height: 110vh;
   background: linear-gradient(180deg, #00bf8f, #26866E, #00DA30 );
   opacity: 1;
   animation: gradient 8s ease infinite alternate;
@@ -373,52 +374,26 @@ h2 {
   bottom: 11.27%;
 }
 .text {
-  color: black;
+  background-color: rgb(0, 0, 0);
 }
-.red {
-  width: 31px;
-  height: 160px;
-  position: absolute;
-  left: 73.82%;
-  right: 15.75%;
-  top: 70.5%;
-  bottom: 29.5%;
-}
-.green {
-  width: 31px;
-  height: 160px;
-  position: absolute;
-  width: 31.86px;
-  height: 150.21px;
-  left: 1126.76px;
-  top: 721.93px;
-}
-.blue {
-  width: 31px;
-  height: 160px;
-  position: absolute;
-  width: 31.86px;
-  height: 159.79px;
-  left: 1204.14px;
-  top: 721.93px;
-}
-.line {
-  position: absolute;
-
+#red, #green, #blue {
+  transform: translateY(-384px);
   width: 150px;
+  margin: 0 0 30px 1089px;
+}
 
-  border: 3px solid #000000;
-  transform: rotate(90deg);
-}
-.mover {
-  position: absolute;
-  left: 72.87%;
-  right: 24.91%;
-  top: 69.46%;
-  bottom: 28.61%;
-  background: #FFFFFC;
-  width: 31px;
-  height: 19px;
-  transform: rotate(90deg);
-  cursor: grabbing;
-}
+#red .ui-slider-range { background: #FF1C1C; }
+#red .ui-slider-handle { border-radius: 0%;
+                          width: 10px;
+                          height: 20px;
+                        }
+#green .ui-slider-range { background: #2AB927; }
+#green .ui-slider-handle { border-radius: 0%;
+                          width: 10px;
+                          height: 20px;
+                          }
+#blue .ui-slider-range { background: #031CFF; }
+#blue .ui-slider-handle { border-radius: 0%;
+                          width: 10px;
+                          height: 20px;
+                        }

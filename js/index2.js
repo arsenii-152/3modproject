@@ -15,6 +15,8 @@ let roundr5 = document.querySelector('.roundr5')
 let roundr6 = document.querySelector('.roundr6')
 let roundr7 = document.querySelector('.roundr7')
 let roundr8 = document.querySelector('.roundr8')
+let stroke1 = document.querySelector('.stroke1')
+let stroke2 = document.querySelector('.stroke2')
 let rotateOneL = anime ({
   targets: '.rotator1',
   rotate: 45,
@@ -22,8 +24,9 @@ let rotateOneL = anime ({
   duration: 200,
 })
 roundl2.onclick = rotateOneL.play
-document.querySelector('.roundl1').addEventListener('click', function() {
-
+document.querySelector('.roundl2').addEventListener('click', function() {
+   stroke1.style.fontSize = '18px';
+   stroke2.style.fontSize = '9px';
 });
 let rotateTwoL = anime ({
   targets: '.rotator1',
@@ -32,7 +35,7 @@ let rotateTwoL = anime ({
   duration: 200,
 })
 roundl3.onclick = rotateTwoL.play
-document.querySelector('.roundl1').addEventListener('click', function() {
+document.querySelector('.roundl3').addEventListener('click', function() {
 
 });
 let rotateThreeL = anime ({
@@ -42,7 +45,7 @@ let rotateThreeL = anime ({
   duration: 200,
 })
 roundl4.onclick = rotateThreeL.play
-document.querySelector('.roundl1').addEventListener('click', function() {
+document.querySelector('.roundl4').addEventListener('click', function() {
 
 });
 let rotateFourL = anime ({
@@ -52,7 +55,7 @@ let rotateFourL = anime ({
   duration: 200,
 })
 roundl5.onclick = rotateFourL.play
-document.querySelector('.roundl1').addEventListener('click', function() {
+document.querySelector('.roundl5').addEventListener('click', function() {
 
 });
 let rotateFiveL = anime ({
@@ -62,7 +65,7 @@ let rotateFiveL = anime ({
   duration: 200,
 })
 roundl6.onclick = rotateFiveL.play
-document.querySelector('.roundl1').addEventListener('click', function() {
+document.querySelector('.roundl6').addEventListener('click', function() {
 
 });
 let rotateSixL = anime ({
@@ -72,7 +75,7 @@ let rotateSixL = anime ({
   duration: 200,
 })
 roundl7.onclick = rotateSixL.play
-document.querySelector('.roundl1').addEventListener('click', function() {
+document.querySelector('.roundl7').addEventListener('click', function() {
 
 });
 let rotateSevenL = anime ({
@@ -82,7 +85,7 @@ let rotateSevenL = anime ({
   duration: 200,
 })
 roundl8.onclick = rotateSevenL.play
-document.querySelector('.roundl1').addEventListener('click', function() {
+document.querySelector('.roundl').addEventListener('click', function() {
 
 });
 
@@ -96,7 +99,7 @@ let rotateOneR = anime ({
   duration: 200,
 })
 roundr2.onclick = rotateOneR.play
-document.querySelector('.roundl1').addEventListener('click', function() {
+document.querySelector('.roundr1').addEventListener('click', function() {
 
 });
 let rotateTwoR = anime ({
@@ -159,3 +162,37 @@ roundr8.onclick = rotateSevenR.play
 document.querySelector('.roundl1').addEventListener('click', function() {
 
 });
+$( function() {
+  function hexFromRGB(r, g, b) {
+    var hex = [
+      r.toString( 16 ),
+      g.toString( 16 ),
+      b.toString( 16 )
+    ];
+    $.each( hex, function( nr, val ) {
+      if ( val.length === 1 ) {
+        hex[ nr ] = "0" + val;
+      }
+    });
+    return hex.join( "" ).toUpperCase();
+  }
+  function refreshSwatch() {
+    var red = $( "#red" ).slider( "value" ),
+      green = $( "#green" ).slider( "value" ),
+      blue = $( "#blue" ).slider( "value" ),
+      hex = hexFromRGB( red, green, blue );
+    $( "#swatch" ).css( "color", "#" + hex );
+  }
+
+  $( "#red, #green, #blue" ).slider({
+    orientation: "horizontal",
+    range: "min",
+    max: 255,
+    value: 127,
+    slide: refreshSwatch,
+    change: refreshSwatch
+  });
+  $( "#red" ).slider( "value", 255 );
+  $( "#green" ).slider( "value", 140 );
+  $( "#blue" ).slider( "value", 60 );
+} );
