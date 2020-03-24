@@ -1,0 +1,424 @@
+@font-face {
+  font-family: "GOST 2930-62 PART 1"
+  src: url(fonts\GOST 2930-62 PART 1.ttf);
+}
+@font-face {
+ font-family: "Lucida Console"
+ src:url(fonts\GOST 2930-62 PART 1.ttf);
+}
+body {
+  margin: 0px;
+  background-color: black;
+}
+h1 {
+  position: absolute;
+  width: 463px;
+  height: 59px;
+  left: 210px;
+  top: 120px;
+  font-family: Lucida Console;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 59px;
+  opacity: 1
+}
+h2 {
+  position: absolute;
+  width: 460px;
+  height: 33px;
+  left: 213px;
+  top: 210px;
+  font-family: Lucida Console;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 33px;
+  opacity: 1
+}
+.panel {
+  position: absolute;
+  width: 1300px;
+  height: 346px;
+  left: 70px;
+  top: 626px;
+  justify-content: center;
+}
+.screenframe {
+  position: absolute;
+  left: 4.86%;
+  right: 30.21%;
+  top: 3.12%;
+  bottom: 46.48%;
+}
+.screen {
+  position: absolute;
+  left: 6.6%;
+  right: 31.94%;
+  top: 5.57%;
+  bottom: 48.83%;
+  background: #454545;
+  border-radius: 47px;
+  background: linear-gradient(180deg, #860000, #D02323, #FF0000 );
+  animation: gradient 2s ease infinite alternate;
+}
+.fakescreen {
+  position: absolute;
+  left: 6.6%;
+  right: 31.94%;
+  top: 5.57%;
+  bottom: 48.83%;
+  background: linear-gradient(180deg, #860000, #D02323, #FF0000 );
+  border-radius: 47px;
+  opacity: 0;
+  animation: gradient 2s ease infinite alternate;
+}
+.resetb {
+  position: absolute;
+  width: 95px;
+  height: 440px;
+  left: 1275px;
+  top: 108px;
+}
+.resetu {
+  position: absolute;
+  width: 64.39px;
+  height: 252px;
+  left: 1290px;
+  top: 31px;
+}
+.dangerback {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  left: 1068px;
+  top: 32px;
+}
+.danger {
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  left: 1079px;
+  top: 43px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #FFE600 0%, #BCAD2A 100%);
+}
+.sound {
+  position: absolute;
+  width: 144px;
+  height: 151px;
+  left: 1068px;
+  top: 215px;
+}
+.nextback {
+  position: absolute;
+  width: 144px;
+  height: 143.21px;
+  left: 1068px;
+  top: 405px;
+}
+.next {
+  position: absolute;
+  width: 88.13px;
+  height: 88.13px;
+  left: 1095.54px;
+  top: 432.54px;
+  background: #FF0000;
+  border-radius: 50%;
+}
+.next:hover {
+  background-color: #B90000;
+}
+.wire {
+  position: absolute;
+  width: 13px;
+  height: 78px;
+  left: 399px;
+  top: 548px;
+}
+.signnext {
+  position: absolute;
+  width: 78.69px;
+  height: 10.23px;
+  left: 1100.26px;
+  top: 471.88px;
+}
+.firstsecond {
+  position: absolute;
+  left: 14.93%;
+  right: 53.97%;
+  top: 66.89%;
+  bottom: 11.33%;
+  background: #4F4F4F;
+}
+.typopanel {
+  position: absolute;
+  width: 400.55px;
+  height: 166.47px;
+  left: 230.77px;
+  top: 710.13px;
+}
+.roundl1 {
+  position: absolute;
+  left: 21.72%;
+  right: 77.95%;
+  top: 85.91%;
+  bottom: 13.63%;
+  background: #C4C4C4;
+  width: 4.73px;
+  height: 4.71px;
+  border-radius: 50%;
+}
+.roundl2 {
+  position: absolute;
+  left: 16.9%;
+  right: 82.55%;
+  top: 83.3%;
+  bottom: 15.93%;
+  background: #C4C4C4;
+  border-radius: 50%;
+  width: 7.88px;
+  height: 7.85px;
+}
+.roundl3 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  width: 11.04px;
+  height: 10.99px;
+  position: absolute;
+  left: 15.15%;
+  right: 84.08%;
+  top: 77.02%;
+  bottom: 21.91%;
+}
+.roundl4 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  position: absolute;
+  left: 16.9%;
+  right: 82.11%;
+  top: 70.42%;
+  bottom: 28.2%;
+  width: 14.19px;
+  height: 14.13px;
+
+}
+.roundl5 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  position: absolute;
+  left: 21.28%;
+  right: 77.51%;
+  top: 67.51%;
+  bottom: 30.81%;
+  width: 17.33px;
+  height: 17.27px;
+
+}
+.roundl6 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  position: absolute;
+  left: 25.77%;
+  right: 72.69%;
+  top: 69.81%;
+  bottom: 28.04%;
+  width: 22.08px;
+  height: 21.99px;
+}
+.roundl7 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  position: absolute;
+  left: 27.74%;
+  right: 70.5%;
+  top: 76.25%;
+  bottom: 21.3%;
+  width: 25.3px;
+  height: 25.13px;
+
+
+}
+.roundl8 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  position: absolute;
+  left: 25.77%;
+  right: 72.26%;
+  top: 82.84%;
+  bottom: 14.4%;
+  width: 28.39px;
+  height: 28.27px;
+}
+.roundr1 {
+  background: #C4C4C4;
+  width: 4.73px;
+  height: 4.71px;
+  border-radius: 50%;
+  position: absolute;
+  left: 37.93%;
+  right: 61.74%;
+  top: 85.91%;
+  bottom: 13.63%;
+
+}
+.roundr2 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  width: 7.88px;
+  height: 7.85px;
+  position: absolute;
+  left: 33.11%;
+  right: 66.34%;
+  top: 83.3%;
+  bottom: 15.93%;
+}
+.roundr3 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  position: absolute;
+  left: 31.36%;
+  right: 67.88%;
+  top: 77.02%;
+  bottom: 21.91%;
+}
+
+.roundr4 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  width: 14.19px;
+  height: 14.13px;
+  position: absolute;
+  left: 33.11%;
+  right: 65.9%;
+  top: 70.42%;
+  bottom: 28.2%;
+
+}
+.roundr5 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  width: 17.33px;
+  height: 17.27px;
+  position: absolute;
+  left: 37.49%;
+  right: 61.31%;
+  top: 67.51%;
+  bottom: 30.81%;
+
+}
+.roundr6 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  width: 22.08px;
+  height: 21.99px;
+  position: absolute;
+  left: 41.98%;
+  right: 56.49%;
+  top: 69.81%;
+  bottom: 28.04%;
+}
+.roundr7 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  width: 25.3px;
+  height: 25.13px;
+  position: absolute;
+  left: 43.95%;
+  right: 54.3%;
+  top: 76.25%;
+  bottom: 21.3%;
+
+}
+.roundr8 {
+  background: #C4C4C4;
+  border-radius: 50%;
+  width: 28.39px;
+  height: 28.27px;
+  position: absolute;
+  left: 41.98%;
+  right: 56.05%;
+  top: 82.84%;
+  bottom: 14.4%;
+}
+.rotator1 {
+  position: absolute;
+  width: 94.23px;
+  height: 94.62px;
+  left: 267.24px;
+  top: 746.05px;
+}
+.rotator2 {
+  position: absolute;
+  width: 94.62px;
+  height: 94.23px;
+  left: 500.43px;
+  top: 746.25px;
+}
+.fade {
+  width: 1440px;
+  height: 1024px;
+  background: linear-gradient(180deg, #00bf8f, #26866E, #00DA30 );
+  opacity: 1;
+  animation: gradient 8s ease infinite alternate;
+}
+@keyframes gradient {
+  100% {
+        background-position: 0 2000px
+    }
+}
+.colorer {
+  position: absolute;
+  left: 52.22%;
+  right: 30.5%;
+  top: 66.8%;
+  bottom: 11.27%;
+}
+.text {
+  color: black;
+}
+.red {
+  width: 31px;
+  height: 160px;
+  position: absolute;
+  left: 73.82%;
+  right: 15.75%;
+  top: 70.5%;
+  bottom: 29.5%;
+}
+.green {
+  width: 31px;
+  height: 160px;
+  position: absolute;
+  width: 31.86px;
+  height: 150.21px;
+  left: 1126.76px;
+  top: 721.93px;
+}
+.blue {
+  width: 31px;
+  height: 160px;
+  position: absolute;
+  width: 31.86px;
+  height: 159.79px;
+  left: 1204.14px;
+  top: 721.93px;
+}
+.line {
+  position: absolute;
+
+  width: 150px;
+
+  border: 3px solid #000000;
+  transform: rotate(90deg);
+}
+.mover {
+  position: absolute;
+  left: 72.87%;
+  right: 24.91%;
+  top: 69.46%;
+  bottom: 28.61%;
+  background: #FFFFFC;
+  width: 31px;
+  height: 19px;
+  transform: rotate(90deg);
+  cursor: grabbing;
+}
