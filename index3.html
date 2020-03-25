@@ -1,83 +1,229 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Slider - Colorpicker</title>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://resources/demos/style.css">
-  <style>
-  #red, #green, #blue {
-    float: left;
-    clear: left;
-    width: 200px;
-    margin: 0 0 30px 100px;
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="master3.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  <script src="js/anime.min.js"></script>
+  </head>
+  <body class="body" >
+    <div class="fade"></div>
+    <section class="content">
+      <svg class="panel" width="1300" height="346" viewBox="0 0 1300 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1300" height="346" rx="54" fill="#868686"/>
+      </svg>
+      <svg class="screenframe" width="935" height="516" viewBox="0 0 935 516" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="935" height="516" rx="17" fill="url(#paint0_linear)"/>
+      <defs>
+      <linearGradient id="paint0_linear" x1="467.5" y1="0" x2="467.5" y2="516" gradientUnits="userSpaceOnUse">
+      <stop offset="0.848958" stop-color="#FFFEDF"/>
+      <stop offset="1" stop-color="#454539"/>
+      </linearGradient>
+      </defs>
+      </svg>
+      <div class="screen">
+        <section class="text">
+          <p>Да&nbsp;будет свет, когда душа во&nbsp;мраке!</p>
+        </section>
+
+      </div>
+      <svg class="dangerback" width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="72" cy="72" r="72" fill="#C4C4C4"/>
+      </svg>
+      <div class="danger"></div>
+      <svg class="sound" width="144" height="151" viewBox="0 0 144 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="72" cy="75.5" rx="72" ry="75.5" fill="white"/>
+      <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="144" height="151">
+      <ellipse cx="71.8742" cy="75.5" rx="71.8742" ry="75.5" fill="white"/>
+      </mask>
+      <g mask="url(#mask0)">
+      <ellipse cx="42.0192" cy="60.8934" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="0.848488" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="120.18" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="60.8934" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="0.848488" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="120.18" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="60.8934" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="0.848488" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="120.18" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="60.8934" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="60.8934" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="0.848488" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="0.848488" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="120.18" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="120.18" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="90.536" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="30.4901" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="149.821" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="90.536" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="90.536" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="30.4901" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="30.4901" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="149.821" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="149.821" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="90.536" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="30.4901" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="149.821" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="90.536" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="30.4901" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="149.821" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="60.8934" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="0.848488" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="120.18" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="60.8934" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="0.848488" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="120.18" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="60.8934" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="0.848488" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="120.18" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="60.8934" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="0.848488" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="120.18" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="90.536" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="30.4901" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="149.821" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="90.536" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="30.4901" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="149.821" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="90.536" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="30.4901" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="149.821" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="90.536" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="30.4901" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="149.821" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="76.0946" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="16.0497" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="135.38" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="76.0946" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="16.0497" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="135.38" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="76.0946" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="16.0497" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="135.38" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="76.0946" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="16.0497" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="135.38" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="105.738" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="88.9269" cy="45.6922" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="105.738" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="26.3832" cy="45.6922" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="105.738" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="57.6549" cy="45.6922" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="105.738" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="120.199" cy="45.6922" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="76.0946" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="16.0497" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="135.38" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="76.0946" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="16.0497" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="135.38" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="76.0946" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="16.0497" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="135.38" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="76.0946" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="76.0946" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="16.0497" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="16.0497" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="135.38" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="135.38" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="105.738" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="73.2906" cy="45.6922" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="105.738" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="105.738" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="10.7474" cy="45.6922" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="135.834" cy="45.6922" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="105.738" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="42.0192" cy="45.6922" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="105.738" rx="4.53942" ry="4.5604" fill="black"/>
+      <ellipse cx="104.562" cy="45.6922" rx="4.53942" ry="4.5604" fill="black"/>
+      </g>
+      </svg>
+      <svg class="wire" width="13" height="79" viewBox="0 0 13 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="5.90564" y1="58.8719" x2="6.90419" y2="0.956488" stroke="#8E8E8E" stroke-width="5"/>
+      <rect y="49" width="12" height="30" fill="#C4C4C4"/>
+      <rect x="1" y="1" width="12" height="5" fill="#C4C4C4"/>
+      </svg>
+      <svg class="nextback" width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="144" height="143.213" rx="25" fill="#FFD337"/>
+      <path d="M119.606 71.6064C119.606 98.1161 98.1161 119.606 71.6064 119.606C45.0968 119.606 23.6064 98.1161 23.6064 71.6064C23.6064 45.0968 45.0968 23.6064 71.6064 23.6064C98.1161 23.6064 119.606 45.0968 119.606 71.6064Z" fill="#A8A8A8"/>
+      </svg>
+      <a href="index2.html"><div class="next" onclick="btnPressed()" ></div></a>
+
+      <svg class="signnext" width="79" height="12" viewBox="0 0 79 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5.75259 7.24979C5.75259 8.00248 5.48318 8.64656 4.94436 9.18203C4.41062 9.71245 3.76505 9.97766 3.00764 9.97766C2.25024 9.97766 1.60213 9.71245 1.06331 9.18203C0.529565 8.64656 0.262695 8.00248 0.262695 7.24979V3.61263C0.262695 2.85994 0.529565 2.21839 1.06331 1.68797C1.60213 1.1525 2.25024 0.884766 3.00764 0.884766C3.76505 0.884766 4.41062 1.1525 4.94436 1.68797C5.48318 2.21839 5.75259 2.85994 5.75259 3.61263H4.60886C4.60886 3.17314 4.45128 2.79933 4.13612 2.49118C3.82605 2.17798 3.44989 2.02138 3.00764 2.02138C2.5654 2.02138 2.1867 2.17798 1.87154 2.49118C1.56146 2.79933 1.40642 3.17314 1.40642 3.61263V7.24979C1.40642 7.68928 1.56146 8.06563 1.87154 8.37883C2.1867 8.68698 2.5654 8.84105 3.00764 8.84105C3.44989 8.84105 3.82605 8.68698 4.13612 8.37883C4.45128 8.06563 4.60886 7.68928 4.60886 7.24979H5.75259Z" fill="white"/>
+      <path d="M10.5105 0.884766H12.615V9.97766H11.4712V2.02138H10.5105C10.236 2.02138 10.0733 2.15525 10.0225 2.42298L8.74154 8.66677C8.55854 9.5407 8.01972 9.97766 7.12507 9.97766V8.84105C7.39956 8.84105 7.56477 8.70718 7.62068 8.43945L8.93216 2.19566C9.08974 1.32173 9.61585 0.884766 10.5105 0.884766Z" fill="white"/>
+      <path d="M18.9055 0.884766V2.02138H15.1312V4.2946H18.3336V5.43121H15.1312V8.84105H19.4773V9.97766H13.9874V0.884766H18.9055Z" fill="white"/>
+      <path d="M25.196 0.884766H27.9409V8.84105H29.0847V11.1143H27.9409V9.97766H21.9935L21.9707 11.1143H20.8498V8.84105H21.9935L23.5948 2.14262C23.793 1.30405 24.3267 0.884766 25.196 0.884766ZM23.1678 8.84105H26.7972V2.02138H25.196C24.9317 2.02138 24.769 2.15019 24.708 2.40783L23.1678 8.84105Z" fill="white"/>
+      <path d="M30.4571 8.79559C30.5588 8.79559 30.6554 8.82084 30.7469 8.87136C30.8435 8.92188 30.9172 8.99512 30.968 9.0911C31.0239 9.18709 31.0519 9.28559 31.0519 9.38662C31.0519 9.48766 31.0239 9.58616 30.968 9.68214C30.9172 9.77307 30.8435 9.84632 30.7469 9.90189C30.6554 9.9524 30.5588 9.97766 30.4571 9.97766C30.3555 9.97766 30.2589 9.9524 30.1674 9.90189C30.0708 9.84632 29.9971 9.77307 29.9463 9.68214C29.8904 9.58616 29.8624 9.48766 29.8624 9.38662C29.8624 9.28559 29.8904 9.18709 29.9463 9.0911C29.9971 8.99512 30.0708 8.92188 30.1674 8.87136C30.2589 8.82084 30.3555 8.79559 30.4571 8.79559Z" fill="white"/>
+      <path d="M44.6394 0.884766V9.97766H43.4956V2.02138H40.2932V9.97766H39.1495V0.884766H44.6394Z" fill="white"/>
+      <path d="M48.1849 0.884766H49.3287L51.5017 9.97766H50.3275L49.87 8.08331H47.6436L47.1861 9.97766H46.0118L48.1849 0.884766ZM47.9104 6.9467H49.6031L48.7568 3.40804L47.9104 6.9467Z" fill="white"/>
+      <path d="M54.0179 0.884766V4.2946H57.2204V0.884766H58.3641V9.97766H57.2204V5.43121H54.0179V9.97766H52.8742V0.884766H54.0179Z" fill="white"/>
+      <path d="M64.6546 0.884766V2.02138H60.8803V4.2946H64.0828V5.43121H60.8803V8.84105H65.2265V9.97766H59.7366V0.884766H64.6546Z" fill="white"/>
+      <path d="M69.9844 0.884766H72.0889V9.97766H70.9451V2.02138H69.9844C69.7099 2.02138 69.5472 2.15525 69.4964 2.42298L68.2154 8.66677C68.0324 9.5407 67.4936 9.97766 66.599 9.97766V8.84105C66.8735 8.84105 67.0387 8.70718 67.0946 8.43945L68.4061 2.19566C68.5636 1.32173 69.0897 0.884766 69.9844 0.884766Z" fill="white"/>
+      <path d="M73.4613 9.97766V0.884766H74.6051V4.2946H76.2063C76.9637 4.2946 77.6093 4.56234 78.143 5.09781C78.6818 5.62823 78.9512 6.26978 78.9512 7.02247V7.24979C78.9512 8.00248 78.6818 8.64656 78.143 9.18203C77.6093 9.71245 76.9637 9.97766 76.2063 9.97766H73.4613ZM76.2063 8.84105C76.6485 8.84105 77.0247 8.68698 77.3348 8.37883C77.6499 8.06563 77.8075 7.68928 77.8075 7.24979V7.02247C77.8075 6.58298 77.6499 6.20916 77.3348 5.90101C77.0247 5.58781 76.6485 5.43121 76.2063 5.43121H74.6051V8.84105H76.2063Z" fill="white"/>
+      </svg>
+      <svg class="dangerb" width="200" height="246" viewBox="0 0 200 246" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect y="9" width="200" height="237" fill="black"/>
+      <path d="M39 29.0459H45.5416C46.8291 29.0459 47.9297 29.4984 48.8435 30.4035C49.7572 31.3085 50.2141 32.3986 50.2141 33.6739C50.2141 34.9491 49.6015 36.1987 48.3762 37.4225C49.6015 38.6361 50.2141 40.009 50.2141 41.5414V42.0042C50.2141 43.5365 49.6638 44.8478 48.5631 45.9379C47.4729 47.0178 46.1542 47.5577 44.607 47.5577H39V29.0459ZM41.3363 31.3599V35.9878H45.5416C46.1853 35.9878 46.7356 35.7616 47.1925 35.3091C47.6494 34.8566 47.8778 34.3115 47.8778 33.6739C47.8778 33.0362 47.6494 32.4912 47.1925 32.0387C46.7356 31.5862 46.1853 31.3599 45.5416 31.3599H41.3363ZM41.3363 38.3018V45.2437H44.607C45.5104 45.2437 46.2788 44.93 46.9122 44.3027C47.5559 43.6651 47.8778 42.8989 47.8778 42.0042V41.5414C47.8778 40.6466 47.5559 39.8856 46.9122 39.2583C46.2788 38.6206 45.5104 38.3018 44.607 38.3018H41.3363Z" fill="white"/>
+      <path d="M55.3539 29.0459V35.9878H61.8954V29.0459H64.2317V47.5577H61.8954V38.3018H55.3539V47.5577H53.0176V29.0459H55.3539Z" fill="white"/>
+      <path d="M69.3715 29.0459V42.5595L75.8352 29.0459H78.2493V47.5577H75.9131V34.0441L69.6051 47.5577L67.0352 47.5423V29.0459H69.3715Z" fill="white"/>
+      <path d="M83.3891 29.0459L89.4634 38.3018L95.5377 29.0459H97.874V47.5577H95.5377V33.2882L89.4634 42.5441L83.3891 33.2882V47.5577H81.0529V29.0459H83.3891Z" fill="white"/>
+      <path d="M105.116 29.0459H107.453L111.892 47.5577H109.493L108.559 43.7011H104.011L103.076 47.5577H100.678L105.116 29.0459ZM104.556 41.3871H108.013L106.285 34.1829L104.556 41.3871Z" fill="white"/>
+      <path d="M117.031 29.0459V35.9878H123.573V29.0459H125.909V47.5577H123.573V38.3018H117.031V47.5577H114.695V29.0459H117.031Z" fill="white"/>
+      <path d="M131.049 29.0459V42.5595L137.513 29.0459H139.927V47.5577H137.591V34.0441L131.283 47.5577L128.713 47.5423V29.0459H131.049Z" fill="white"/>
+      <path d="M152.776 29.0459V31.3599H145.067V35.9878H151.608V38.3018H145.067V45.2437H153.944V47.5577H142.73V29.0459H152.776Z" fill="white"/>
+      <path d="M161.947 41.2074H160.129L159.332 25H162.745L161.947 41.2074ZM159.045 45.8516C159.045 45.0723 159.236 44.5247 159.619 44.2088C160.002 43.8929 160.469 43.7349 161.022 43.7349C161.554 43.7349 162.011 43.8929 162.394 44.2088C162.798 44.5247 163 45.0723 163 45.8516C163 46.6099 162.798 47.1575 162.394 47.4945C162.011 47.8315 161.554 48 161.022 48C160.469 48 160.002 47.8315 159.619 47.4945C159.236 47.1575 159.045 46.6099 159.045 45.8516Z" fill="white"/>
+      <rect x="42" width="117" height="9" fill="#C4C4C4"/>
+      </svg>
+      <div class="dangerbutton"></div>
+      <svg class="dangercloser" width="208" height="245" viewBox="0 0 208 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d)">
+      <g filter="url(#filter1_b)">
+      <rect x="4" width="200" height="237" fill="#8F8B89" fill-opacity="0.69"/>
+      </g>
+      <path d="M106.414 169.586C105.633 168.805 104.367 168.805 103.586 169.586L90.8579 182.314C90.0768 183.095 90.0768 184.361 90.8579 185.142C91.6389 185.923 92.9052 185.923 93.6863 185.142L105 173.828L116.314 185.142C117.095 185.923 118.361 185.923 119.142 185.142C119.923 184.361 119.923 183.095 119.142 182.314L106.414 169.586ZM107 237V171H103V237H107Z" fill="white"/>
+      </g>
+      <defs>
+      <filter id="filter0_d" x="0" y="0" width="208" height="245" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+      </filter>
+      <filter id="filter1_b" x="-4" y="-8" width="216" height="253" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImage" stdDeviation="4"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+      <div class="lastone"></div>
+      <div class="lastholder"></div>
+      <svg class="lastbtn" width="138" height="138" viewBox="0 0 138 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="69" cy="69" r="69" fill="#FA4343"/>
+      <path d="M47.9554 59.7496V81.4808H45.2564V62.466H37.699V81.4808H35V59.7496H47.9554Z" fill="black"/>
+      <path d="M53.9113 59.7496L55.6207 70.5065C55.6567 70.7721 55.7767 71.0075 55.9806 71.2128C56.1965 71.418 56.4664 71.5206 56.7903 71.5206H58.6437L61.3607 59.7496H64.1497L60.2991 76.3558C59.9992 77.6114 59.2974 78.7825 58.1938 79.869C57.1022 80.9435 55.6627 81.4808 53.8754 81.4808L53.8934 78.7825C54.925 78.7704 55.7647 78.4505 56.4125 77.8227C57.0722 77.1828 57.4861 76.4886 57.654 75.7401L58.0139 74.237H56.7903C55.7227 74.237 54.847 73.899 54.1633 73.2229C53.4915 72.5348 53.0896 71.7742 52.9577 70.9411L51.1943 59.7496H53.9113Z" fill="black"/>
+      <path d="M80.344 74.9614C80.344 76.7603 79.7083 78.2996 78.4367 79.5793C77.1772 80.8469 75.6537 81.4808 73.8663 81.4808C72.0789 81.4808 70.5495 80.8469 69.2779 79.5793C68.0184 78.2996 67.3886 76.7603 67.3886 74.9614V66.2689C67.3886 64.4701 68.0184 62.9368 69.2779 61.6692C70.5495 60.3894 72.0789 59.7496 73.8663 59.7496C75.6537 59.7496 77.1772 60.3894 78.4367 61.6692C79.7083 62.9368 80.344 64.4701 80.344 66.2689H77.645C77.645 65.2186 77.2731 64.3252 76.5294 63.5888C75.7976 62.8402 74.91 62.466 73.8663 62.466C72.8227 62.466 71.929 62.8402 71.1853 63.5888C70.4535 64.3252 70.0877 65.2186 70.0877 66.2689V74.9614C70.0877 76.0118 70.4535 76.9112 71.1853 77.6597C71.929 78.3961 72.8227 78.7644 73.8663 78.7644C74.91 78.7644 75.7976 78.3961 76.5294 77.6597C77.2731 76.9112 77.645 76.0118 77.645 74.9614H80.344Z" fill="black"/>
+      <path d="M86.2819 59.7496V69.5648L93.2275 59.7496H96.5383L91.4101 66.9933L96.5383 81.4808H93.6773L89.5028 69.6916L86.2819 74.237V81.4808H83.5829V59.7496H86.2819Z" fill="black"/>
+      <path d="M105.784 74.0261H103.683L102.762 55H106.705L105.784 74.0261ZM102.43 79.478C102.43 78.5632 102.652 77.9203 103.094 77.5495C103.536 77.1786 104.076 76.9931 104.715 76.9931C105.329 76.9931 105.858 77.1786 106.3 77.5495C106.767 77.9203 107 78.5632 107 79.478C107 80.3681 106.767 81.011 106.3 81.4066C105.858 81.8022 105.329 82 104.715 82C104.076 82 103.536 81.8022 103.094 81.4066C102.652 81.011 102.43 80.3681 102.43 79.478Z" fill="black"/>
+      </svg>
+      <svg class="lastsafe" width="212" height="212" viewBox="0 0 212 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="212" height="212" rx="58" fill="#808080" fill-opacity="0.63"/>
+      <path d="M107.414 164.586C106.633 163.805 105.367 163.805 104.586 164.586L91.8579 177.314C91.0768 178.095 91.0768 179.361 91.8579 180.142C92.6389 180.923 93.9052 180.923 94.6863 180.142L106 168.828L117.314 180.142C118.095 180.923 119.361 180.923 120.142 180.142C120.923 179.361 120.923 178.095 120.142 177.314L107.414 164.586ZM108 208V166H104V208H108Z" fill="white"/>
+      </svg>
 
 
-  }
-  #swatch {
-    width: 120px;
-    height: 100px;
-    margin-top: 18px;
-    margin-left: 350px;
-    background-image: none;
-  }
-  #red .ui-slider-range { background: #ef2929; }
-  #red .ui-slider-handle { border-color: #fff; }
-  #green .ui-slider-range { background: #8ae234; }
-  #green .ui-slider-handle { border-color: #8ae234; }
-  #blue .ui-slider-range { background: #729fcf; }
-  #blue .ui-slider-handle { border-color: #729fcf; }
-  </style>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    function hexFromRGB(r, g, b) {
-      var hex = [
-        r.toString( 16 ),
-        g.toString( 16 ),
-        b.toString( 16 )
-      ];
-      $.each( hex, function( nr, val ) {
-        if ( val.length === 1 ) {
-          hex[ nr ] = "0" + val;
-        }
-      });
-      return hex.join( "" ).toUpperCase();
-    }
-    function refreshSwatch() {
-      var red = $( "#red" ).slider( "value" ),
-        green = $( "#green" ).slider( "value" ),
-        blue = $( "#blue" ).slider( "value" ),
-        hex = hexFromRGB( red, green, blue );
-      $( "#swatch" ).css( "background-color", "#" + hex );
-    }
-
-    $( "#red, #green, #blue" ).slider({
-      orientation: "horizontal",
-      range: "min",
-      max: 255,
-      value: 127,
-      slide: refreshSwatch,
-      change: refreshSwatch
-    });
-    $( "#red" ).slider( "value", 255 );
-    $( "#green" ).slider( "value", 140 );
-    $( "#blue" ).slider( "value", 60 );
-  } );
-  </script>
-</head>
-<body class="ui-widget-content" style="border:0;">
 
 
 
-<div id="red"></div>
-<div id="green"></div>
-<div id="blue"></div>
-
-<div id="swatch" class="ui-widget-content ui-corner-all"></div>
 
 
-</body>
+      <script src="js/index3.js"></script>
+    </body>
+    </section>
 </html>

@@ -1,0 +1,177 @@
+body {
+  margin: 0px;
+  background-color: black;
+}
+p {
+  position: absolute;
+  width: 800px;
+  height: 300px;
+  left: 210px;
+  top: 120px;
+  font-family: Lucida Console;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  opacity: 1;
+  margin-left: -131px;
+  margin-top: 83px;
+  text-shadow: white 0px 0px 15px;
+}
+
+.panel {
+  position: absolute;
+  width: 1300px;
+  height: 346px;
+  left: 70px;
+  top: 626px;
+  justify-content: center;
+}
+.screenframe {
+  position: absolute;
+  left: 4.86%;
+  right: 30.21%;
+  top: 3.12%;
+  bottom: 46.48%;
+}
+.screen {
+  position: relative;
+  width: 885px;
+  height: 467px;
+  border-radius: 47px;
+  background: linear-gradient(180deg, #860000, #D02323, #FF0000 );
+  animation: gradient 2s ease infinite alternate;
+  margin: 57px 0px 0px 95px;
+}
+
+@keyframes gradient {
+  100% {
+        background-position: 0 2000px
+    }
+}
+
+.resetb {
+  position: absolute;
+  width: 95px;
+  height: 440px;
+  left: 1275px;
+  top: 108px;
+}
+.resetu {
+  position: absolute;
+  width: 64.39px;
+  height: 252px;
+  left: 1290px;
+  top: 31px;
+}
+.dangerback {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  left: 1068px;
+  top: 32px;
+}
+.danger {
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  left: 1079px;
+  top: 43px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #B90000 0%, #FF0000 100%);
+}
+.sound {
+  position: absolute;
+  width: 144px;
+  height: 151px;
+  left: 1068px;
+  top: 215px;
+}
+.nextback {
+  position: absolute;
+  width: 144px;
+  height: 143.21px;
+  left: 1068px;
+  top: 405px;
+}
+.next {
+  position: absolute;
+  width: 88.13px;
+  height: 88.13px;
+  left: 1095.54px;
+  top: 432.54px;
+  background: #FF0000;
+  border-radius: 50%;
+}
+.next:hover {
+  background-color: #B90000;
+}
+.wire {
+  position: absolute;
+  width: 13px;
+  height: 78px;
+  left: 399px;
+  top: 548px;
+}
+.signnext {
+  position: absolute;
+  width: 78.69px;
+  height: 10.23px;
+  left: 1100.26px;
+  top: 471.88px;
+}
+.dangerb {
+  position: absolute;
+  width: 200px;
+  height: 246px;
+  left: 464px;
+  top: 676px;
+
+}
+.dangerbutton {
+  position: absolute;
+  width: 124px;
+  height: 155px;
+  left: 502px;
+  top: 732px;
+  background: radial-gradient(50% 50% at 50% 50%, #FF0606 0%, #8F0000 100%);
+}
+.dangercloser {
+  position: absolute;
+  width: 209px;
+  height: 307px;
+  left: 459px;
+  top: 654px;
+}
+.lastone {
+  position: absolute;
+  width: 212px;
+  height: 212px;
+  left: 765px;
+  top: 701px;
+  background: #FBF32F;
+  border-radius: 58px;
+}
+.lastholder {
+  position: absolute;
+  left: 56.39%;
+  right: 35.49%;
+  top: 67.68%;
+  bottom: 31.45%;
+  width: 117px;
+  height: 9px;
+  background: #C4C4C4;
+}
+.lastbtn {
+  position: absolute;
+  width: 138px;
+  height: 138px;
+  left: 802px;
+  top: 740px;
+}
+.lastsafe {
+  position: absolute;
+  width: 212px;
+  height: 212px;
+  left: 765px;
+  top: 701px;
+}
