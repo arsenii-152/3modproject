@@ -1,5 +1,5 @@
 let safeOne = document.querySelector('.dangercloser')
-
+let body = document.querySelector('.body')
 
 let openFirst = anime ({
   targets: '.dangercloser',
@@ -23,5 +23,21 @@ let openSecond = anime ({
 })
 safeTwo.onclick = openSecond.play
 
+
+let fakeScreen = document.querySelector('.fakescreen')
 let buttonOne = document.querySelector('.dangerbutton')
 let buttonTwo = document.querySelector('.lastbtn')
+
+
+
+let onePressed = anime ({
+  targets: '.fakescreen',
+  opacity: 0,
+  autoplay: false,
+  duration: 1000,
+})
+buttonOne.onclick = onePressed.play
+function soundOne() {
+  let audioWarn = new Audio('audio/warning.mp3');
+  audioWarn.play()
+}

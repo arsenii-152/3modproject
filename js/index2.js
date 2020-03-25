@@ -106,7 +106,7 @@ roundl8.onclick = rotateSevenL.play
 document.querySelector('.roundl8').addEventListener('click', function() {
   stroke1.style.fontSize = '59px';
   stroke2.style.fontSize = '33px'
-  stroke2.style.margin = '25px -2px'
+  stroke2.style.margin = '25px -7px'
   stroke1.style.textShadow = 'white 0px 0px 10px'
 });
 
@@ -126,7 +126,7 @@ document.querySelector('.roundr2').addEventListener('click', function() {
    stroke1.innerHTML = 'Свет в окне может стать лучом надежды...'
    stroke2.style.opacity = 0
    stroke1.style.width = '800px'
-   stroke1.style.transform = 'translateX(-140px)' 
+   stroke1.style.transform = 'translateX(-126px)'
 });
 let rotateTwoR = anime ({
   targets: '.rotator2',
@@ -139,7 +139,7 @@ document.querySelector('.roundr3').addEventListener('click', function() {
   stroke1.innerHTML = 'Не бойся теней, они означают, что рядом горит свет'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
-  sroke1.style.transform = 'translateX(-140px)' 
+  stroke1.style.transform = 'translateX(-126px)'
 });
 let rotateThreeR = anime ({
   targets: '.rotator2',
@@ -152,7 +152,7 @@ document.querySelector('.roundr4').addEventListener('click', function() {
   stroke1.innerHTML = 'Не жалуйся на тьму. Стань сам маленьким источником света'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
-  strroke1.style.transform = 'translateX(-140px)'
+  stroke1.style.transform = 'translateX(-126px)'
 });
 let rotateFourR = anime ({
   targets: '.rotator2',
@@ -165,7 +165,7 @@ document.querySelector('.roundr5').addEventListener('click', function() {
   stroke1.innerHTML = 'Свет превыше всякой цены.'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
-  strroke1.style.transform = 'translateX(-140px)'
+  stroke1.style.transform = 'translateX(-126px)'
 });
 let rotateFiveR = anime ({
   targets: '.rotator2',
@@ -178,7 +178,7 @@ document.querySelector('.roundr6').addEventListener('click', function() {
   stroke1.innerHTML = 'Даруй свет, и тьма исчезнет сама собой.'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
-  strroke1.style.transform = 'translateX(-140px)'
+  stroke1.style.transform = 'translateX(-126px)'
 });
 let rotateSixR = anime ({
   targets: '.rotator2',
@@ -191,7 +191,7 @@ document.querySelector('.roundr7').addEventListener('click', function() {
   stroke1.innerHTML = 'Грех не в темноте, а в нежелании света'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
-  strroke1.style.transform = 'translateX(-140px)'
+  stroke1.style.transform = 'translateX(-126px)'
 });
 let rotateSevenR = anime ({
   targets: '.rotator2',
@@ -204,7 +204,7 @@ document.querySelector('.roundr8').addEventListener('click', function() {
   stroke1.innerHTML = 'Да будет свет, когда душа во мраке!'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
-  strroke1.style.transform = 'translateX(-140px)'
+  stroke1.style.transform = 'translateX(-126px)'
 });
 $( function() {
   function hexFromRGB(r, g, b) {

@@ -12,10 +12,11 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
+  color: white;
   opacity: 1;
   margin-left: -131px;
-  margin-top: 83px;
-  text-shadow: white 0px 0px 15px;
+  margin-top: 271px;
+  text-shadow: red 0px 0px 15px;
 }
 
 .panel {
@@ -37,11 +38,24 @@ p {
   position: relative;
   width: 885px;
   height: 467px;
-  border-radius: 47px;
-  background: linear-gradient(180deg, #860000, #D02323, #FF0000 );
-  animation: gradient 2s ease infinite alternate;
+  border-radius: 102px;
   margin: 57px 0px 0px 95px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(img3/Ac8P.gif);
+  transform: translateY(-1024px);
 }
+.fakescreen {
+    position: absolute;
+    left: 6.6%;
+    right: 31.94%;
+    top: 5.57%;
+    bottom: 48.83%;
+    background: linear-gradient(180deg, #860000, #D02323, #FF0000 );
+    border-radius: 47px;
+    opacity: 1
+    }
 
 @keyframes gradient {
   100% {
@@ -174,4 +188,12 @@ p {
   height: 212px;
   left: 765px;
   top: 701px;
+}
+.fade {
+  width: 1816px;
+  height: 1024px;
+  background-image: url(img3/226786474_0_0_1024_579_600x0_80_0_0_1a6afcec3f7eea643bb6e09b839f6898.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
