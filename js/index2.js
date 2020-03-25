@@ -25,8 +25,10 @@ let rotateOneL = anime ({
 })
 roundl2.onclick = rotateOneL.play
 document.querySelector('.roundl2').addEventListener('click', function() {
-   stroke1.style.fontSize = '18px';
-   stroke2.style.fontSize = '9px';
+   stroke1.style.fontSize = '24px';
+   stroke2.style.fontSize = '12px';
+   stroke1.style.margin = '53px 132px'
+   stroke2.style.margin = '53px 132px'
 });
 let rotateTwoL = anime ({
   targets: '.rotator1',
@@ -36,7 +38,10 @@ let rotateTwoL = anime ({
 })
 roundl3.onclick = rotateTwoL.play
 document.querySelector('.roundl3').addEventListener('click', function() {
-
+  stroke1.style.fontSize = '30px';
+  stroke2.style.fontSize = '15px';
+  stroke1.style.margin = '56px 98px'
+  stroke2.style.margin = '50px 103px'
 });
 let rotateThreeL = anime ({
   targets: '.rotator1',
@@ -46,7 +51,10 @@ let rotateThreeL = anime ({
 })
 roundl4.onclick = rotateThreeL.play
 document.querySelector('.roundl4').addEventListener('click', function() {
-
+  stroke1.style.fontSize = '36px';
+  stroke2.style.fontSize = '18px';
+  stroke1.style.margin = '53px 85px'
+  stroke2.style.margin = '47px 94px'
 });
 let rotateFourL = anime ({
   targets: '.rotator1',
@@ -56,7 +64,10 @@ let rotateFourL = anime ({
 })
 roundl5.onclick = rotateFourL.play
 document.querySelector('.roundl5').addEventListener('click', function() {
-
+  stroke1.style.fontSize = '42px';
+  stroke2.style.fontSize = '21px';
+  stroke1.style.margin = '53px 79px'
+  stroke2.style.margin = '44px 97px'
 });
 let rotateFiveL = anime ({
   targets: '.rotator1',
@@ -66,7 +77,10 @@ let rotateFiveL = anime ({
 })
 roundl6.onclick = rotateFiveL.play
 document.querySelector('.roundl6').addEventListener('click', function() {
-
+  stroke1.style.fontSize = '48px';
+  stroke2.style.fontSize = '24px';
+  stroke1.style.margin = '53px 43px'
+  stroke2.style.margin = '34px 59px'
 });
 let rotateSixL = anime ({
   targets: '.rotator1',
@@ -76,7 +90,11 @@ let rotateSixL = anime ({
 })
 roundl7.onclick = rotateSixL.play
 document.querySelector('.roundl7').addEventListener('click', function() {
-
+  stroke1.style.fontSize = '54px';
+  stroke2.style.fontSize = '27px'
+  stroke1.style.margin = '53px 11px'
+  stroke2.style.margin = '25px 27px'
+  ;
 });
 let rotateSevenL = anime ({
   targets: '.rotator1',
@@ -85,9 +103,14 @@ let rotateSevenL = anime ({
   duration: 200,
 })
 roundl8.onclick = rotateSevenL.play
-document.querySelector('.roundl').addEventListener('click', function() {
-
+document.querySelector('.roundl8').addEventListener('click', function() {
+  stroke1.style.fontSize = '59px';
+  stroke2.style.fontSize = '33px'
+  stroke2.style.margin = '25px -2px'
+  stroke1.style.textShadow = 'white 0px 0px 10px'
 });
+
+
 
 
 
@@ -99,8 +122,11 @@ let rotateOneR = anime ({
   duration: 200,
 })
 roundr2.onclick = rotateOneR.play
-document.querySelector('.roundr1').addEventListener('click', function() {
-
+document.querySelector('.roundr2').addEventListener('click', function() {
+   stroke1.innerHTML = 'Свет в окне может стать лучом надежды...'
+   stroke2.style.opacity = 0
+   stroke1.style.width = '800px'
+   stroke1.style.transform = 'translateX(-140px)' 
 });
 let rotateTwoR = anime ({
   targets: '.rotator2',
@@ -109,8 +135,11 @@ let rotateTwoR = anime ({
   duration: 200,
 })
 roundr3.onclick = rotateTwoR.play
-document.querySelector('.roundl1').addEventListener('click', function() {
-
+document.querySelector('.roundr3').addEventListener('click', function() {
+  stroke1.innerHTML = 'Не бойся теней, они означают, что рядом горит свет'
+  stroke2.style.opacity = 0
+  stroke1.style.width = '800px'
+  sroke1.style.transform = 'translateX(-140px)' 
 });
 let rotateThreeR = anime ({
   targets: '.rotator2',
@@ -119,8 +148,11 @@ let rotateThreeR = anime ({
   duration: 200,
 })
 roundr4.onclick = rotateThreeR.play
-document.querySelector('.roundl1').addEventListener('click', function() {
-
+document.querySelector('.roundr4').addEventListener('click', function() {
+  stroke1.innerHTML = 'Не жалуйся на тьму. Стань сам маленьким источником света'
+  stroke2.style.opacity = 0
+  stroke1.style.width = '800px'
+  strroke1.style.transform = 'translateX(-140px)'
 });
 let rotateFourR = anime ({
   targets: '.rotator2',
@@ -129,8 +161,11 @@ let rotateFourR = anime ({
   duration: 200,
 })
 roundr5.onclick = rotateFourR.play
-document.querySelector('.roundl1').addEventListener('click', function() {
-
+document.querySelector('.roundr5').addEventListener('click', function() {
+  stroke1.innerHTML = 'Свет превыше всякой цены.'
+  stroke2.style.opacity = 0
+  stroke1.style.width = '800px'
+  strroke1.style.transform = 'translateX(-140px)'
 });
 let rotateFiveR = anime ({
   targets: '.rotator2',
@@ -139,8 +174,11 @@ let rotateFiveR = anime ({
   duration: 200,
 })
 roundr6.onclick = rotateFiveR.play
-document.querySelector('.roundl1').addEventListener('click', function() {
-
+document.querySelector('.roundr6').addEventListener('click', function() {
+  stroke1.innerHTML = 'Даруй свет, и тьма исчезнет сама собой.'
+  stroke2.style.opacity = 0
+  stroke1.style.width = '800px'
+  strroke1.style.transform = 'translateX(-140px)'
 });
 let rotateSixR = anime ({
   targets: '.rotator2',
@@ -149,8 +187,11 @@ let rotateSixR = anime ({
   duration: 200,
 })
 roundr7.onclick = rotateSixR.play
-document.querySelector('.roundl1').addEventListener('click', function() {
-
+document.querySelector('.roundr7').addEventListener('click', function() {
+  stroke1.innerHTML = 'Грех не в темноте, а в нежелании света'
+  stroke2.style.opacity = 0
+  stroke1.style.width = '800px'
+  strroke1.style.transform = 'translateX(-140px)'
 });
 let rotateSevenR = anime ({
   targets: '.rotator2',
@@ -159,8 +200,11 @@ let rotateSevenR = anime ({
   duration: 200,
 })
 roundr8.onclick = rotateSevenR.play
-document.querySelector('.roundl1').addEventListener('click', function() {
-
+document.querySelector('.roundr8').addEventListener('click', function() {
+  stroke1.innerHTML = 'Да будет свет, когда душа во мраке!'
+  stroke2.style.opacity = 0
+  stroke1.style.width = '800px'
+  strroke1.style.transform = 'translateX(-140px)'
 });
 $( function() {
   function hexFromRGB(r, g, b) {
