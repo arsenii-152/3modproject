@@ -204,7 +204,7 @@ document.querySelector('.roundr8').addEventListener('click', function() {
   stroke1.innerHTML = 'Да будет свет, когда душа во мраке!'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
-  stroke1.style.transform = 'translateX(-126px)'
+  stroke1.style.transform = 'translateX(-116px)'
 });
 $( function() {
   function hexFromRGB(r, g, b) {

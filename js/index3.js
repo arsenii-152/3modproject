@@ -1,9 +1,6 @@
 let safeOne = document.querySelector('.dangercloser')
 let body = document.querySelector('.body')
-let panel = document.querySelector('.panel')
-let screenframe = document.querySelector('.screenframe')
-let screenl = document.querySelector('.screen')
-let fakescreen = document.querySelector('.fakescreen')
+let el = document.querySelector('.el')
 
 
 let openFirst = anime ({
@@ -54,9 +51,5 @@ let twoPressed = anime ({
 buttonTwo.onclick = twoPressed.play
 document.querySelector('.lastbtn').addEventListener('click', function() {
   audioWarnTwo.play()
-  panel.style.transform = 'translateX(10000px)'
-  screenframe.style.transform = 'translateX(10000px)'
-  screenl.style.transform = 'translateX(10000px)'
-  fakescreen.style.transform = 'translateX(10000px)'
-
+  el.style.transform = 'translateX(100px)'
 });
