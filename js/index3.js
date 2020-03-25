@@ -27,7 +27,8 @@ safeTwo.onclick = openSecond.play
 let fakeScreen = document.querySelector('.fakescreen')
 let buttonOne = document.querySelector('.dangerbutton')
 let buttonTwo = document.querySelector('.lastbtn')
-
+let audioWarn = new Audio('audio/warning.mp3');
+let audioWarnTwo = new Audio('audio/siren.mp3');
 
 
 let onePressed = anime ({
@@ -37,7 +38,27 @@ let onePressed = anime ({
   duration: 1000,
 })
 buttonOne.onclick = onePressed.play
-function soundOne() {
-  let audioWarn = new Audio('audio/warning.mp3');
-  audioWarn.play()
-}
+let el = document.querySelector('.el')
+let twoPressed = anime({
+  targets: '.el',
+  opacity: 1,
+  autoplay: false,
+  duration: 1000,
+  translateX: function(el) {
+    return el.getAttribute('data-x');
+  },
+  translateY: function(el, i) {
+    return 50 + (-50 * i);
+  },
+  scale: function(el, i, l) {
+    return (l - i) + .25;
+  },
+  rotate: function() { return anime.random(-360, 360); },
+  duration: function() { return anime.random(1200, 1800); },
+  delay: function() { return anime.random(0, 400); },
+  direction: 'alternate',
+});
+buttonTwo.onclick = twoPressed.play
+document.querySelector('.lastbtn').addEventListener('click', function() {
+  audioWarnTwo.play()
+});

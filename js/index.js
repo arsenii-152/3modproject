@@ -14,7 +14,7 @@ document.querySelector('.clickl').addEventListener('click', function() {
     lampFirst.style.background = "#24FF00"
 });
 
-
+let audioStart = new Audio('audio/start.mp3');
 let screenl = document.querySelector('.screen')
 let danger = document.querySelector('.danger')
 let text = document.querySelector('.text')
@@ -30,6 +30,7 @@ document.querySelector('.clickr').addEventListener('click', function() {
   text.style.opacity = 1
   danger.style.background = "radial-gradient(50% 50% at 50% 50%, #05FF00 0%, #68BC66 100%)"
   lampSecond.style.background = "#24FF00"
+  audioStart.play()
 });
 
 let igniteBtn1 = document.querySelector('.clickr')
