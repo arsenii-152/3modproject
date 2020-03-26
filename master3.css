@@ -192,9 +192,10 @@ p {
 .fade {
   width: 1816px;
   height: 1024px;
-  background-image: url(img3/226786474_0_0_1024_579_600x0_80_0_0_1a6afcec3f7eea643bb6e09b839f6898.jpg);
+  background-image: url(chernobyl-1024x640.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0
+  opacity: 0;
+  transform: translateX(-100px);
 }
