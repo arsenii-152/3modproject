@@ -106,7 +106,7 @@ roundl8.onclick = rotateSevenL.play
 document.querySelector('.roundl8').addEventListener('click', function() {
   stroke1.style.fontSize = '59px';
   stroke2.style.fontSize = '33px'
-  stroke2.style.margin = '25px -7px'
+  stroke2.style.margin = '25px 5px'
   stroke1.style.textShadow = 'white 0px 0px 10px'
 });
 
@@ -123,7 +123,7 @@ let rotateOneR = anime ({
 })
 roundr2.onclick = rotateOneR.play
 document.querySelector('.roundr2').addEventListener('click', function() {
-   stroke1.innerHTML = 'Свет в окне может стать лучом надежды...'
+   stroke1.innerHTML = 'Свет в окне может стать лучом надежды'
    stroke2.style.opacity = 0
    stroke1.style.width = '800px'
    stroke1.style.transform = 'translateX(-126px)'
@@ -162,7 +162,7 @@ let rotateFourR = anime ({
 })
 roundr5.onclick = rotateFourR.play
 document.querySelector('.roundr5').addEventListener('click', function() {
-  stroke1.innerHTML = 'Свет превыше всякой цены.'
+  stroke1.innerHTML = 'Свет превыше всякой цены'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
   stroke1.style.transform = 'translateX(-126px)'
@@ -175,7 +175,7 @@ let rotateFiveR = anime ({
 })
 roundr6.onclick = rotateFiveR.play
 document.querySelector('.roundr6').addEventListener('click', function() {
-  stroke1.innerHTML = 'Даруй свет, и тьма исчезнет сама собой.'
+  stroke1.innerHTML = 'Даруй свет, и тьма исчезнет сама собой'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
   stroke1.style.transform = 'translateX(-126px)'
@@ -188,7 +188,7 @@ let rotateSixR = anime ({
 })
 roundr7.onclick = rotateSixR.play
 document.querySelector('.roundr7').addEventListener('click', function() {
-  stroke1.innerHTML = 'Грех не в темноте, а в нежелании света'
+  stroke1.innerHTML = 'Грех не&nbsp;в&nbsp;темноте, а&nbsp;в&nbsp;нежелании света'
   stroke2.style.opacity = 0
   stroke1.style.width = '800px'
   stroke1.style.transform = 'translateX(-126px)'
